@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hide {
+  display: none!important;
+}
+
+.mobile-hide {
+  display: none!important;
+}
+
+header {
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+  padding: 50px 30px;
+}
+
+#header-desktop {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+#header-desktop h1 {display: inline-block;}
+
+#header-desktop a, #header-mobile a {
+  text-decoration: none;
+  color: rgb(91, 91, 197);
+  font-style: italic;
+}
+
+#header-desktop ul {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
+  height: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#header-mobile h1 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#header-mobile ul {
+  position: absolute;
+  top: 143px;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 10%;
+  background-color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: aliceblue;
+  padding: 50px;
+  text-align: center;
+}
+
+#article-filters {
+  padding: 20px;
+}
+#article-filters * {
+  font-size: 24px;
+}
+#article-filters input, #article-filters select {
+  font-size: 20px;
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+#article-results {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px 10px;
+}
+.article-card {
+  position: relative;
+  width: 45%;
+  border: 4px solid black;
+  padding: 5px;
+}
+.article-card img {
+  width: 100%;
+}
+.article-card button {
+  position: absolute;
+  font-size: 14px;
+  padding: 1px 3px;
+  bottom: 3px;
+  right: 3px;
+}
+
+/* About Page */
+#about-page {
+  padding: 30px;
+}
+
+/* Selected Article */
+#selected-article-card {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 10px;
+}
+
+#selected-article-card img {width: 100%;}
+
+@media screen and (min-width:1024px) {
+  .mobile-hide {
+    display: block!important;
+  }
+
+  .desktop-hide {
+    display: none!important;
+  }
+
+  #header-desktop {
+    display: grid!important;
+  }
+
+  .article-card {
+    position: relative;
+    width: 30%;
+  }
+}
