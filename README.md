@@ -1,8 +1,23 @@
-# React + Vite
+# NewsAPI React App devolpment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Using NewsAPI.org 
 
-Currently, two official plugins are available:
+**Project Description:**
+Learning how to fetch data from A news source and incorporationg it into a newly built app using React JS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## List of npm packages and why we used them
+
+- `package-1`: Brief explanation of why it was used.
+- `package-2`: Brief explanation of why it was used.
+
+## Code Snippets
+
+### Dynamic API Call
+
+![Monkey staring at the reader.](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/440-monkey.svg/1024px-440-monkey.svg.png?20180429184355)
+
+```javascript
+// Provide a code snippet here that demonstrates a dynamic API call.
+// Write a brief explanation of how it works in the app.
+
